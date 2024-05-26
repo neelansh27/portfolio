@@ -1,15 +1,14 @@
 import React from "react";
 import '../css/WebDev.css';
-import { FontAwesomeIcon,library } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const WebDev = () => {
   
   return (
+    <>
     <div className="role-container">
     <div>
-    <div>
     Hi 
-    <FontAwesomeIcon icon="coffee" />
-    </div>
+    <FontAwesomeIcon icon="fa-solid fa-wand-sparkles" />
     </div>
       <svg
         className="web-dev"
@@ -69,6 +68,7 @@ const WebDev = () => {
         />
       </svg>
     </div>
+    </>
   );
 };
 
