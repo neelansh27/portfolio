@@ -1,0 +1,100 @@
+.role-container {
+  height: 80vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .web-dev { */
+/*   overflow: visible; */
+/* } */
+:root {
+  --web-dev: #82EAF4;
+  --glow-1: #57A0F8;
+  --glow-2: #677AF1;
+}
+
+.web-dev path{
+  stroke: var(--web-dev);
+  stroke-width: 4px;
+  fill: transparent;
+  animation: line-appear 6s ease forwards, glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(1px 1px 5px var(--glow-1)) drop-shadow(2px 2px 2px var(--glow-1));
+  } to {
+    filter: 
+    drop-shadow(1px 1px 5px var(--glow-1)) 
+    drop-shadow(2px 2px 2px var(--glow-2))
+    drop-shadow(0px 0px 3px var(--glow-1));
+  }
+}
+
+.web-dev path:nth-child(1) {
+  stroke-dasharray: 517px;
+  stroke-dashoffset: 517px;
+  animation-delay: 3.4s,0ms;
+}
+
+.web-dev path:nth-child(2) {
+  stroke-dasharray: 450px;
+  stroke-dashoffset: 450px;
+  animation-delay: 2.8s,0ms;
+}
+.web-dev path:nth-child(3) {
+  stroke-dasharray: 421px;
+  stroke-dashoffset: 421px;
+  animation-delay: 2.8s,0ms;
+}
+.web-dev path:nth-child(4) {
+  stroke-dasharray: 516px;
+  stroke-dashoffset: 516px;
+  animation-delay: 2.5s,0ms;
+}
+.web-dev path:nth-child(5) {
+  stroke-dasharray: 299px;
+  stroke-dashoffset: 299px;
+  animation-delay: 2.2s,0ms;
+}
+.web-dev path:nth-child(6) {
+  stroke-dasharray: 449px;
+  stroke-dashoffset: 449px;
+  animation-delay: 1.9s,0ms;
+}
+.web-dev path:nth-child(7) {
+  stroke-dasharray: 439px;
+  stroke-dashoffset: 439px;
+  animation-delay: 1.6s,0ms;
+}
+.web-dev path:nth-child(8) {
+  stroke-dasharray: 449px;
+  stroke-dashoffset: 449px;
+  animation-delay: 1.3s,0ms;
+}
+.web-dev path:nth-child(9) {
+  stroke-dasharray: 522px;
+  stroke-dashoffset: 524px;
+  animation-delay: 1s,0ms;
+}
+.web-dev path:nth-child(10) {
+  stroke-dasharray: 551px;
+  stroke-dashoffset: 553px;
+  animation-delay: 0.7s,0ms;
+}
+.web-dev path:nth-child(11) {
+  stroke-dasharray: 449px;
+  stroke-dashoffset: 450px;
+  animation-delay: 0.4s,0ms;
+}
+.web-dev path:nth-child(12) {
+  stroke-dasharray: 790px;
+  stroke-dashoffset: 790px;
+}
+@keyframes line-appear {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
