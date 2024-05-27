@@ -10,6 +10,7 @@ const Navbar = () => {
     })
   },[])
   return (
+    <header>
       <nav className="navbar">
         <li className="my-name"> Neelansh </li>
         <li>About</li>
@@ -18,6 +19,7 @@ const Navbar = () => {
           <button className="contact">Get in Touch</button>
         </li>
       </nav>
+</header>
   );
 };
 

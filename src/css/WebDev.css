@@ -6,15 +6,17 @@
   align-items: center;
 }
 
-/* .web-dev { */
-/*   overflow: visible; */
-/* } */
 :root {
   --web-dev: #82EAF4;
   --glow-1: #57A0F8;
   --glow-2: #677AF1;
 }
 
+.web-dev{
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+}
 .web-dev path{
   stroke: var(--web-dev);
   stroke-width: 4px;
@@ -34,8 +36,8 @@
 }
 
 .web-dev path:nth-child(1) {
-  stroke-dasharray: 517px;
-  stroke-dashoffset: 517px;
+  stroke-dasharray: 518px;
+  stroke-dashoffset: 518px;
   animation-delay: 3.4s,0ms;
 }
 
@@ -75,18 +77,18 @@
   animation-delay: 1.3s,0ms;
 }
 .web-dev path:nth-child(9) {
-  stroke-dasharray: 522px;
+  stroke-dasharray: 524px;
   stroke-dashoffset: 524px;
   animation-delay: 1s,0ms;
 }
 .web-dev path:nth-child(10) {
-  stroke-dasharray: 551px;
+  stroke-dasharray: 553px;
   stroke-dashoffset: 553px;
   animation-delay: 0.7s,0ms;
 }
 .web-dev path:nth-child(11) {
-  stroke-dasharray: 449px;
-  stroke-dashoffset: 450px;
+  stroke-dasharray: 451px;
+  stroke-dashoffset: 451px;
   animation-delay: 0.4s,0ms;
 }
 .web-dev path:nth-child(12) {

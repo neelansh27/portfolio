@@ -6,10 +6,6 @@ const WebDev = () => {
   return (
     <>
     <div className="role-container">
-    <div>
-    Hi 
-    <FontAwesomeIcon icon="fa-solid fa-wand-sparkles" />
-    </div>
       <svg
         className="web-dev"
         width="1120"

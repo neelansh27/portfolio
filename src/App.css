@@ -1,11 +1,17 @@
-body{
+html,body{
   background: linear-gradient(90deg, #000, #555);
   color: white;
   /* background: linear-gradient() */
+  margin: 0;
+  padding: 0;
 }
 
+/* * { */
+/* background: rgba(255, 255, 255, 0.1); */
+/* } */
+
 section {
-  min-width: 100vw;
+  margin-top: 5vh;
   min-height: 100vh;
 }
 
