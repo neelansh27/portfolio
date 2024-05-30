@@ -1,6 +1,5 @@
 import React from "react";
 import '../css/WebDev.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const WebDev = () => {
   
   return (

@@ -1,19 +1,57 @@
 :root {
   --gradient-main: #4CD8EB;
 }
+
+#info-container{
+  display: grid;
+  grid-template: 1fr / 1fr 2fr;
+  padding: 1em;
+  background-color: #262C36;
+  border-radius: 20px;
+  margin: 0px 20px;
+}
+
+.col-head {
+  text-align: center;
+}
+
+#dp{
+  min-width: 150px;
+  min-height: 150px;
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-image: url("https://images.unsplash.com/photo-1715523692156-77aebf1a1d43?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  border-radius: 50%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .bar-container{
   width: 90%;
   height: 10px;
   border-radius: 10px;
   margin: 5px;
-  background-color: #001F47;
+  background-color: #1D313D;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro{
+  text-align: justify;
+  padding: 2em;
 }
 
 .bar{
   position: relative;
   width: var(--prog);
   height: inherit;
-  -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+  -webkit-box-reflect: below 0px linear-gradient(transparent,#0005);
   -ms-: below 1px linear-gradient(transparent,#0005);
 }
 .bar::before{
@@ -23,14 +61,31 @@
   border-radius: 10px;
   background: linear-gradient(90deg,var(--gradient-main) 0 46%, white 48% 49%, var(--gradient-main) 51% 100%);
   background-size: 200%;
-  animation: move 4s infinite;
+  animation: move 4s linear infinite;
   /* filter: blur(1px); */
 }
+
+.lang-name {
+  padding: 0px 5px;
+}
+.skill-list{
+  list-style: none;
+}
+.skill-list li {
+  padding-top: 20px;
+}
+
 @keyframes move {
   0% {
     background-position: 0 0;
   }
   0% {
     background-position: 200% 0;
+  }
+}
+
+@media screen and (max-width: 900px){
+  #info-container{
+    grid-template: 1fr 1fr/1fr;
   }
 }

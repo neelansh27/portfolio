@@ -8,10 +8,8 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <section>
         <WebDev />
-      </section>
-      <section>
+      <section id="info">
         <Info />
       </section>
     <section>
