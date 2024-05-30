@@ -5,7 +5,7 @@ const Socials = () => {
       <ul>
         <li>Github</li>
         <li>Twitter</li>
-    <l1>LinkedIn</l1>
+        <l1>LinkedIn</l1>
       </ul>
     </div>
   )

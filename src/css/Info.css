@@ -1,0 +1,36 @@
+:root {
+  --gradient-main: #4CD8EB;
+}
+.bar-container{
+  width: 90%;
+  height: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #001F47;
+}
+
+.bar{
+  position: relative;
+  width: var(--prog);
+  height: inherit;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+  -ms-: below 1px linear-gradient(transparent,#0005);
+}
+.bar::before{
+  content: ' ';
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg,var(--gradient-main) 0 46%, white 48% 49%, var(--gradient-main) 51% 100%);
+  background-size: 200%;
+  animation: move 4s infinite;
+  /* filter: blur(1px); */
+}
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 200% 0;
+  }
+}
