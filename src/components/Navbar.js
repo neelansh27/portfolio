@@ -13,7 +13,7 @@ const Navbar = () => {
     <header>
       <nav className="navbar">
         <li className="my-name"> Neelansh </li>
-        <li>About</li>
+        <li><a href="#info-container">About</a></li>
         <li>Services</li>
         <li>
           <button className="contact">Get in Touch</button>

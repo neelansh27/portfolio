@@ -9,14 +9,21 @@ html,body{
   /* background: linear-gradient() */
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+*{
+  box-sizing: border-box;
 }
 
+.col-head{
+  text-align: center;
+}
 /* * { */
 /* background: rgba(255, 255, 255, 0.1); */
 /* } */
 
 section {
-  padding-top: 9vh;
+  margin-top: 9vh;
   min-height: 91vh;
 }
 
