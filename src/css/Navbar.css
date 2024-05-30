@@ -11,10 +11,10 @@
   padding: 10px;
 }
 
-li:first-child{
+.navbar li:first-child{
   margin-right: auto;
 }
-li:last-child{
+.navbar li:last-child{
   margin-left: auto;
 }
 

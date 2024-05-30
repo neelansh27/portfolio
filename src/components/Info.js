@@ -45,7 +45,14 @@ const Info = () => {
             <FontAwesomeIcon icon="fa-brands fa-node-js" />
             <span className="lang-name">NodeJS</span>
             <div className="bar-container">
-              <div className="bar" style={{ "--prog": "60%" }}></div>
+              <div className="bar" style={{ "--prog": "55%" }}></div>
+            </div>
+          </li>
+          <li>
+            <FontAwesomeIcon icon="fa-brands fa-python" />
+            <span className="lang-name">Python</span>
+            <div className="bar-container">
+              <div className="bar" style={{ "--prog": "70%" }}></div>
             </div>
           </li>
         </ul>
