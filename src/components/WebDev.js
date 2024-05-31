@@ -5,6 +5,7 @@ const WebDev = () => {
   return (
     <>
     <div className="role-container">
+    <h2 className="col-head greeting"> Hello, I am Neelansh Sharma and I am a</h2>
       <svg
         className="web-dev"
         width="1120"

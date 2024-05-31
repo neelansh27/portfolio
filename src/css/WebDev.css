@@ -4,12 +4,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 :root {
   --web-dev: #82EAF4;
   --glow-1: #57A0F8;
   --glow-2: #677AF1;
+}
+
+.greeting {
+  position: absolute; 
+  top: 10%;
 }
 
 .web-dev{
