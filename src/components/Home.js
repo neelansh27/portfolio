@@ -8,16 +8,18 @@ const Home = () => {
   return (
     <>
       <Navbar />
+      <section>
         <WebDev />
+      </section>
       <section id="info">
         <Info />
       </section>
-    <section id="projects">
-      <Projects/>
-    </section>
-    <section>
-      <Socials />
-    </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section>
+        <Socials />
+      </section>
     </>
   );
 };

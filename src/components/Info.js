@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Info.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Info = () => {
   return (
     <div id="info-container">
@@ -10,15 +10,13 @@ const Info = () => {
           <div id="dp"></div>
         </div>
         <div className="intro">
-          Adipisicing aut sed distinctio commodi corrupti Ratione soluta
-          accusantium itaque explicabo sequi expedita. Beatae corporis aperiam
-          odit sapiente ipsum Dicta natus itaque quo reprehenderit debitis.
-          Eaque iure nemo quos sunt vel quasi. Modi necessitatibus cumque omnis
-          saepe ad rem Exercitationem quod hic omnis quis deserunt Enim sit
+          A 19 y/o backend developer and Linux enthusiast based near Delhi,
+          India. I also have interest in the fields of Data Science and Machine
+          Learning.
         </div>
       </div>
       <div className="skills">
-    <h2 className="col-head">Skills</h2>
+        <h2 className="col-head">Skills</h2>
         <ul className="skill-list">
           <li>
             <FontAwesomeIcon icon="fa-brands fa-html5" />
