@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import WebDev from "./WebDev";
 import Info from "./Info";
 import Socials from "./Socials";
+import Projects from "./Projects";
 const Home = () => {
   return (
     <>
@@ -11,6 +12,9 @@ const Home = () => {
       <section id="info">
         <Info />
       </section>
+    <section id="projects">
+      <Projects/>
+    </section>
     <section>
       <Socials />
     </section>
