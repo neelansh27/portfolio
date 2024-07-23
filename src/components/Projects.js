@@ -1,11 +1,14 @@
 import "../css/Projects.css";
+import blogpress from '../assets/blogpress.png'
+import daucv from '../assets/daucv.png'
+import lnav from '../assets/lnav.png'
 const Projects = () => {
   return (
     <div className="proj-container">
       <h2 className="col-head">Projects</h2>
       <ul id="project-list">
         <li className="project-item">
-        <img src="https://i.ibb.co/zVKTPdf/Copy-Q-Hr-HMij.png" alt="temp" />
+        <img src={blogpress} alt="temp" />
           <div>
             <h4>
               <a href="https://blogpress-client.vercel.app/" target={"_blank"}>
@@ -22,7 +25,7 @@ const Projects = () => {
         </li>
         <li className="project-item">
           <img
-            src="https://i.ibb.co/RSxbnkg/Copy-Q-v-Sg-VDG.png"
+            src={lnav}
             alt="landing_page"
           />
           <div>
@@ -43,7 +46,7 @@ const Projects = () => {
           </div>
         </li>
         <li className="project-item">
-    <img src="https://i.ibb.co/bK3Sd2L/image.png" alt="image" />
+    <img src={daucv} alt="image" />
     <div>
             <h4>
               <a

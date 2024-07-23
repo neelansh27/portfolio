@@ -16,9 +16,8 @@
   min-height: 150px;
   width: 50%;
   aspect-ratio: 1/1;
-  background-image: url("https://i.ibb.co/X83stkD/meInCoat.jpg");
   border-radius: 50%;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }

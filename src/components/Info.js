@@ -1,13 +1,14 @@
 import React from "react";
 import "../css/Info.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import me_cs from '../assets/me_cs.png'
 const Info = () => {
   return (
     <div id="info-container">
       <div className="about">
         <h2 className="col-head">About Me</h2>
         <div>
-          <div id="dp"></div>
+          <div id="dp" style={{backgroundImage:`url(${me_cs})`}}></div>
         </div>
         <div className="intro">
           A 19 y/o backend developer and Linux enthusiast based near Delhi,
