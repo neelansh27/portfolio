@@ -1,8 +1,6 @@
-import ScrambledText from "@/components/SrambledText"
+import AppWindowWrapper from "@/components/AppWindows/AppWindowWrapper";
 export default function Home() {
   return (
-      <div className={"font-bold underline"}>
-        <ScrambledText text={"Neelansh Sharma"} />
-      </div>
+        <AppWindowWrapper/>
   );
 }

@@ -1,0 +1,19 @@
+.appWindow {
+    color: white;
+    position: relative;
+    height: 80vh;
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(40,40,40,0.3);
+    border-radius: 0.5rem;
+    border: 2px solid white;
+}
+
+.appWindow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: -1;
+}
