@@ -1,8 +1,7 @@
-import Image from "next/image";
 import ScrambledText from "@/components/SrambledText"
 export default function Home() {
   return (
-      <div>
+      <div className={"font-bold underline"}>
         <ScrambledText text={"Neelansh Sharma"} />
       </div>
   );
