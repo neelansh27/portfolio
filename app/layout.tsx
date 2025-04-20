@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navigation/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import {AppWindowProvider} from "@/context/AppWindowContext";
+import {firaMono} from "@/lib/fonts";
+import "./globals.css";
+import clsx from "clsx";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-gradient-to-t from-blue-500 to-45% to-gray-800 h-screen antialiased`}
+        className={clsx(
+            firaMono.className,
+            `${geistSans.variable} ${geistMono.variable}`,
+            // "bg-gradient-to-t from-blue-500 to-45% to-gray-800 h-screen antialiased"
+        )}
       >
         <AppWindowProvider>
             <Navbar/>

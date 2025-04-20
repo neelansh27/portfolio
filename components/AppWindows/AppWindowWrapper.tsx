@@ -1,7 +1,7 @@
 'use client';
 import { useAppWindow } from "@/context/AppWindowContext"
 import {useEffect} from "react";
-import Home from "@/components/AppWindows/Home";
+import Greet from "@/components/AppWindows/Greet";
 import Skills from "@/components/AppWindows/Skills";
 import Projects from "@/components/AppWindows/Projects";
 import LeetCode from "@/components/AppWindows/LeetCode";
@@ -14,8 +14,8 @@ export default function AppWindowWrapper() {
         console.log(appWindow)
     }, [appWindow])
     return (
-        <main className={"h-screen py-10"}>
-            { appWindow==='home' && <Home/> }
+        <main className={"h-screen py-5"}>
+            { appWindow==='greet.sh' && <Greet/> }
             { appWindow==='skills' && <Skills/> }
             { appWindow==='projects' && <Projects/> }
             { appWindow==='leetcode' && <LeetCode/> }

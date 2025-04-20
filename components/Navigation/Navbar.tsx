@@ -1,17 +1,16 @@
 "use client";
 import NavItem from "@/components/Navigation/NavItem";
 import { FiGithub } from "react-icons/fi";
-import { AiOutlineHome } from "react-icons/ai";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { FaScrewdriverWrench } from "react-icons/fa6";
-import {FaLinkedin, FaProjectDiagram} from "react-icons/fa";
+import {FaLinkedin, FaProjectDiagram, FaTerminal} from "react-icons/fa";
 import {MdOutlineMailOutline} from "react-icons/md";
 import React, {useRef} from "react";
 import {scale} from "@/utils/scale";
 
 export default function Navbar() {
     const navlist = [
-        {icon: AiOutlineHome, text: "Home", winName: "home"},
+        {icon: FaTerminal, text: "Term", winName: "greet.sh"},
         {icon: FaScrewdriverWrench, text: "Skills", winName: 'skills'},
         {icon: FaProjectDiagram, text: "Projects", winName: 'projects'},
         {icon: TbBrandLeetcode, text: "LeetCode", winName: 'leetcode'},
@@ -33,7 +32,7 @@ export default function Navbar() {
         dock.current.style.setProperty('--dock-offset-right', `${off}px`);
     }
     return (
-        <div className="fixed bottom-2 flex justify-center items-center w-full">
+        <div className="fixed z-50 bottom-2 flex justify-center items-center w-full">
             <nav>
                 <ul ref={dock} className={"flex items-end h-20 bg-black gap-1.5 rounded-xl px-5 py-4 transition-all duration-300"}>
                 { navlist.map((item, idx) => {

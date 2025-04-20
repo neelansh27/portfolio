@@ -1,12 +1,13 @@
 import ScrambledText from "@/components/SrambledText"
 import styles from '@/components/AppWindows/app-windows.module.css'
 import clsx from "clsx";
-export default function Home() {
+import TitleBar from "@/components/AppWindows/TitleBar";
+export default function Greet() {
     return (
         <div className={ clsx(
             styles.appWindow,
-            'flex justify-center items-center'
         )}>
+            <TitleBar/>
         <ScrambledText text={"Neelansh Sharma"} />
         </div>
     )
