@@ -4,6 +4,7 @@ import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 interface ScrambledTextProps {
     text: string;
     frames?: number;
+    delay?: number
 }
 
 interface CharacterState {
