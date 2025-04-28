@@ -13,8 +13,11 @@
 
 .appWindow::before {
     content: '';
-    position: absolute;
-    inset: 0;
+    position: fixed;
+    height: 85vh;
+    width: 95%;
+    /*display: block;*/
+    /*inset: 0;*/
     backdrop-filter: blur(12px);
     z-index: -1;
 }

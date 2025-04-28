@@ -6,7 +6,7 @@ export default function TitleBar(){
         switchWindow(null);
     }
     return (
-        <div className={"flex items-center font-medium w-full py-0.5 bg-[#1e1e1e]"}>
+        <div className={"flex items-center sticky top-0 font-medium w-full py-0.5 bg-[#1e1e1e]"}>
             <span className={"ml-auto"}>{appWindow}</span>
             <button onClick={closeWindow} className={"menu ml-auto mr-2 inline-block bg-red-500 h-4 w-4 rounded-full"}></button>
         </div>
