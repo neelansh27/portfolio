@@ -2,8 +2,8 @@ import ScrambledText from "@/components/SrambledText"
 import styles from '@/components/AppWindows/app-windows.module.css'
 import clsx from "clsx";
 import TitleBar from "@/components/AppWindows/TitleBar";
-import LastLogin from "@/components/AppWindows/TermUI/LastLogin";
-import Prompt from "@/components/AppWindows/TermUI/Prompt";
+import LastLogin from "@/components/AppWindows/ui/Term/LastLogin";
+import Prompt from "@/components/AppWindows/ui/Term/Prompt";
 
 export default function Greet() {
 
