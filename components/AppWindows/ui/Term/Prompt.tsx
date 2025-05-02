@@ -1,13 +1,14 @@
-import {Dispatch, SetStateAction, useEffect, useState} from "react";
+import { useEffect, useState} from "react";
 import clsx from "clsx";
 
 interface PromptProps {
+    prompt?: string;
     command: string;
     typingDuration: number; // in milliseconds
-    delay:number
+    delay?:number
 }
 
-export default function Prompt({ command, typingDuration, delay=0 }: PromptProps) {
+export default function Prompt({ prompt="Guest@Browser ~ % ", command, typingDuration, delay=0 }: PromptProps) {
     const [text, setText] = useState<string>('');
     const [hideCursor, setHideCursor] = useState<boolean>(false);
 
@@ -39,13 +40,14 @@ export default function Prompt({ command, typingDuration, delay=0 }: PromptProps
 
     return (
         <div className={"flex items-center gap-1"}>
-            <span className={"font-bold"}>Guest@Browser ~ %{" "}</span>
-            <span>{text}</span>
-            <span className={clsx(
-                { "hidden": hideCursor },
-                "inline-block w-2 h-4 bg-white",
-                "animate-[blink_0.7s_steps(1,start)_infinite]"
-            )}></span>
+            <span className={"font-bold"}>{prompt}</span>
+            <span>{text}
+                <span className={clsx(
+                    {"hidden": hideCursor},
+                    "inline-block w-2 h-4 bg-white",
+                    "animate-[blink_0.7s_steps(1,start)_infinite]"
+                )}></span>
+            </span>
         </div>
     )
 }
