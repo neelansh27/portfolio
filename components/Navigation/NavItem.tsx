@@ -3,20 +3,30 @@ import {IconType} from "react-icons";
 import styles from './navitem.module.css';
 import React from "react";
 import { useAppWindow } from "@/context/AppWindowContext";
+import {useRouter} from "next/navigation";
 
 interface NavItemProps {
     IconAction: IconType,
     text: string,
     winName: string,
+    link?: string,
     onMouseMove:(e: React.MouseEvent<HTMLLIElement>) => void,
 }
 
-export default function NavItem({IconAction, text, winName, onMouseMove}: NavItemProps) {
+export default function NavItem({IconAction, text, winName, link, onMouseMove}: NavItemProps) {
     const { switchWindow } = useAppWindow();
+    const router = useRouter();
+    const handleClick = () => {
+        if (link) {
+            router.push(link);
+        } else {
+            switchWindow(winName);
+        }
+    }
     return (
         <li
             onMouseMove={onMouseMove}
-            onClick={()=>switchWindow(winName)}
+            onClick={handleClick}
             title={text}
             className={clsx(
                 styles.navItem,

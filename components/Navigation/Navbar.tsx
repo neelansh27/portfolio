@@ -13,10 +13,10 @@ export default function Navbar() {
         {icon: FaTerminal, text: "Term", winName: "greet.sh"},
         {icon: FaScrewdriverWrench, text: "Skills", winName: 'skills'},
         {icon: FaProjectDiagram, text: "Projects", winName: 'projects'},
-        {icon: TbBrandLeetcode, text: "LeetCode", winName: 'leetcode'},
-        {icon: FaLinkedin, text: "LinkedIn", winName: 'linkedin'},
-        {icon: FiGithub, text: "GitHub", winName: 'github'},
-        {icon: MdOutlineMailOutline, text: "Contact", winName: 'contact'},
+        {icon: TbBrandLeetcode, text: "LeetCode", winName: 'leetcode', link: "https://www.leetcode.com/u/neelansh27"},
+        {icon: FaLinkedin, text: "LinkedIn", winName: 'linkedin', link:"https://www.linkedin.com/in/neelansh-sharma-71742b258/"},
+        {icon: FiGithub, text: "GitHub", winName: 'github', link: "https://www.github.com/neelansh27"},
+        {icon: MdOutlineMailOutline, text: "Contact", winName: 'contact', link: "mailto:neelansh27arch@gmail.com"},
     ]
 
     const dock = useRef<HTMLUListElement>(null);
@@ -36,7 +36,7 @@ export default function Navbar() {
             <nav>
                 <ul ref={dock} className={"flex items-end h-20 bg-black gap-1.5 rounded-xl px-5 py-4 transition-all duration-300"}>
                 { navlist.map((item, idx) => {
-                    return (<NavItem key={idx} onMouseMove={handleHover} IconAction={item.icon} winName={item.winName} text={item.text} />)
+                    return (<NavItem key={idx} onMouseMove={handleHover} IconAction={item.icon} winName={item.winName} text={item.text} link={item.link}/>)
                 })}
                 </ul>
             </nav>
