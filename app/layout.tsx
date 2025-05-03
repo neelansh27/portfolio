@@ -5,6 +5,7 @@ import {AppWindowProvider} from "@/context/AppWindowContext";
 import {firaMono} from "@/lib/fonts";
 import "./globals.css";
 import clsx from "clsx";
+import ParticlesBackground from "@/components/ParticleBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
             // "bg-gradient-to-t from-blue-500 to-45% to-gray-800 h-screen antialiased"
         )}
       >
+      <ParticlesBackground/>
         <AppWindowProvider>
             <Navbar/>
             {children}

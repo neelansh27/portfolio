@@ -14,7 +14,7 @@ export default function AppWindowWrapper() {
         console.log(appWindow)
     }, [appWindow])
     return (
-        <main className={"h-screen py-5"}>
+        <main className={"h-screen absolute z-10 w-full py-5"}>
             { appWindow==='greet.sh' && <Greet/> }
             { appWindow==='skills' && <Skills/> }
             { appWindow==='projects' && <Projects/> }
