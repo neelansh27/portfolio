@@ -21,7 +21,7 @@ export const AppWindowProvider: FC<{ children:ReactNode }> = ({children}) => {
 
     // This can also be use to close a window by switching it to null
     const switchWindow = (winName: string | null) => {
-        console.table({appWindow, winName})
+        // console.table({appWindow, winName})
         setAppWindow(winName);
     };
     return (
