@@ -23,7 +23,7 @@ export default function TechStackCloud({
             '/languages/go.png',
             '/languages/docker.png',
             '/languages/python.png',
-            '/languages/javascript.png',
+            '/languages/javascript.svg',
             '/languages/html.png',
             '/languages/css.png',
             '/languages/linux.png',
@@ -79,7 +79,7 @@ export default function TechStackCloud({
                     radius * Math.sin(theta) * Math.sin(phi),
                     radius * Math.cos(phi)
                 );
-                sprite.scale.set(28, 28, 1);
+                sprite.scale.set(32, 32, 1);
                 group.add(sprite);
             });
         });
