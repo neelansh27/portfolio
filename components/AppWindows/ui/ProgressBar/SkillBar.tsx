@@ -28,7 +28,7 @@ export default function SkillBar({label = "Skill",progress = 50, delay=0}: Skill
                     className={clsx(
                         styles.growWidth,
                         styles.dot,
-                        "absolute inset-y-0 left-0 bg-gradient-to-r from-white/50 from-50% to-yellow-400/80 rounded-full"
+                        "absolute inset-y-0 left-0 bg-gradient-to-r from-blue-200/80 from-50% to-blue-600/90 rounded-full"
                     )}
                     style={{ width: dotPosition }}
                 ></div>

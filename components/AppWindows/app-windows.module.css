@@ -9,6 +9,13 @@
     border: 3px solid #8899dd;
     padding: 0;
     overflow: hidden auto;
+    /* firefox */
+    scrollbar-width: none;
+}
+
+/* for Chrome, Safari, Opera */
+.appWindow::-webkit-scrollbar {
+    display: none;
 }
 
 .appWindow::before {

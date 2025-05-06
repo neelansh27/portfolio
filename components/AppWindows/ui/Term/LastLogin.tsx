@@ -13,6 +13,6 @@ export default function LastLogin() {
             });
     }, []);
     return (
-        <div>Last Login: { when } from { ip || "browser" }</div>
+        <div className={"pl-1 font-medium"}>Last Login: { when } from { ip || "browser" }</div>
     )
 }
