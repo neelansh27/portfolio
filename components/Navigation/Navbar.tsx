@@ -4,7 +4,7 @@ import { FiGithub } from "react-icons/fi";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { FaScrewdriverWrench } from "react-icons/fa6";
 import {FaLinkedin, FaProjectDiagram, FaTerminal} from "react-icons/fa";
-import {MdOutlineMailOutline} from "react-icons/md";
+import {MdOutlineMailOutline, MdWorkOutline} from "react-icons/md";
 import React, {useRef} from "react";
 import {scale} from "@/utils/scale";
 
@@ -13,6 +13,7 @@ export default function Navbar() {
         {icon: FaTerminal, text: "Term", winName: "greet.sh"},
         {icon: FaScrewdriverWrench, text: "Skills", winName: 'skills'},
         {icon: FaProjectDiagram, text: "Projects", winName: 'projects'},
+        {icon: MdWorkOutline, text: "Work", winName: "work experience"},
         {icon: TbBrandLeetcode, text: "LeetCode", winName: 'leetcode', link: "https://www.leetcode.com/u/neelansh27"},
         {icon: FaLinkedin, text: "LinkedIn", winName: 'linkedin', link:"https://www.linkedin.com/in/neelansh-sharma-71742b258/"},
         {icon: FiGithub, text: "GitHub", winName: 'github', link: "https://www.github.com/neelansh27"},

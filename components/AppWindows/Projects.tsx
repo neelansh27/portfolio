@@ -2,9 +2,9 @@ import styles from '@/components/AppWindows/app-windows.module.css'
 import clsx from "clsx";
 import TitleBar from "@/components/AppWindows/TitleBar";
 import {FaReact} from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
 import ProjectCard from "@/components/AppWindows/ui/Card/ProjectCard";
 import {RiNextjsLine, RiTailwindCssFill} from "react-icons/ri";
+import {SiTypescript} from "react-icons/si";
 export default function Projects() {
     const cards = [
         {
@@ -13,7 +13,7 @@ export default function Projects() {
             description: "This portfolio introduces who I am and highlights my skills, projects, and professional experience.",
             tags: [
                 { Icon: RiNextjsLine, name: "NextJS"},
-                { Icon: IoLogoJavascript, name: "JavaScript"},
+                { Icon: SiTypescript, name: "TypeScript"},
                 { Icon: RiTailwindCssFill, name: "TailwindCSS"},
             ]
         },
