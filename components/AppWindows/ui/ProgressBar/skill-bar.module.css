@@ -1,12 +1,10 @@
-:root {
-    --dot-color: rgb(69, 124, 255);
-    --dot-shadow: rgb(69 124 255/ 0.8);
-}
 .growWidth {
     width: --final-width;
     animation: progress 2s ease-out forwards;
 }
 .dot::after {
+    --dot-color: rgb(69, 124, 255);
+    --dot-shadow: rgb(69 124 255/ 0.8);
     content: "";
     position: absolute;
     right: 0;
