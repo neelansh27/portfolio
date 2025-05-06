@@ -10,10 +10,10 @@ interface ProjectCardProps {
 export default function ProjectCard({title,imageSrc, description, tags}: ProjectCardProps) {
     return (
         <div className={"w-full border-2 rounded-lg select-none"}>
-            <Image src={imageSrc} className={"w-full"} width={100} height={100} alt={"project-image"}/>
+            <Image src={imageSrc} className={"w-full"} objectFit={"cover"} width={100} height={100} alt={"project-image"} unoptimized={true} priority />
             <div className={"px-4 py-2"}>
                 <h2 className={"font-bold text-lg capitalize"}>{ title }</h2>
-                <p>{ description }</p>
+                <p className={"text-md opacity-90"}>{ description }</p>
                  <div className={"flex gap-2 flex-wrap py-2"}>
                     {
                         tags.map((tag, idx) => {

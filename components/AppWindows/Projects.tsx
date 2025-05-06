@@ -4,44 +4,46 @@ import TitleBar from "@/components/AppWindows/TitleBar";
 import {FaReact} from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import ProjectCard from "@/components/AppWindows/ui/Card/ProjectCard";
+import {RiNextjsLine, RiTailwindCssFill} from "react-icons/ri";
 export default function Projects() {
     const cards = [
         {
-            title: "lorem2",
-            imageSrc:"/wallpaper_30.jpg",
-            description: "Lorem ipsum dolor sit amet, consetetur" ,
+            title: "My Portfolio",
+            imageSrc:"/Projects/portfolio.png",
+            description: "This portfolio introduces who I am and highlights my skills, projects, and professional experience.",
             tags: [
-                { Icon: FaReact, name: "React"},
-                { Icon: IoLogoJavascript, name: "JavaScript"}
+                { Icon: RiNextjsLine, name: "NextJS"},
+                { Icon: IoLogoJavascript, name: "JavaScript"},
+                { Icon: RiTailwindCssFill, name: "TailwindCSS"},
             ]
         },
         {
             title: "lorem2",
-            imageSrc:"/wallpaper_30.jpg",
+            imageSrc:"/Projects/portfolio.png",
             description: "Lorem ipsum dolor sit amet, consetetur" ,
             tags: [{ Icon: FaReact, name: "React"}]
         },
         {
             title: "lorem2",
-            imageSrc:"/wallpaper_30.jpg",
+            imageSrc:"/Projects/portfolio.png",
             description: "Lorem ipsum dolor sit amet, consetetur" ,
             tags: [{ Icon: FaReact, name: "React"}]
         },
         {
             title: "lorem2",
-            imageSrc:"/wallpaper_30.jpg",
+            imageSrc:"/Projects/portfolio.png",
             description: "Lorem ipsum dolor sit amet, consetetur" ,
             tags: [{ Icon: FaReact, name: "React"}]
         },
         {
             title: "lorem2",
-            imageSrc:"/wallpaper_30.jpg",
+            imageSrc:"/Projects/portfolio.png",
             description: "Lorem ipsum dolor sit amet, consetetur" ,
             tags: [{ Icon: FaReact, name: "React"}]
         },
         {
             title: "lorem2",
-            imageSrc:"/wallpaper_30.jpg",
+            imageSrc:"/Projects/portfolio.png",
             description: "Lorem ipsum dolor sit amet, consetetur" ,
             tags: [{ Icon: FaReact, name: "React" }]
         },
