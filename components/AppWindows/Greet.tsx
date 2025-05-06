@@ -12,8 +12,8 @@ export default function Greet() {
         const timeStamps = [
             1000,
             3400,
-            11100,
-            14100,
+            10400,
+            13100,
         ]
         const timer = Array(4).fill(null);
         timeStamps.forEach((time, idx)=>{
