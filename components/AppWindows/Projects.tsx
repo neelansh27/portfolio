@@ -1,10 +1,10 @@
 import styles from '@/components/AppWindows/app-windows.module.css'
 import clsx from "clsx";
 import TitleBar from "@/components/AppWindows/TitleBar";
-import {FaReact} from "react-icons/fa";
+import { FaNodeJs, FaReact} from "react-icons/fa";
 import ProjectCard from "@/components/AppWindows/ui/Card/ProjectCard";
 import {RiNextjsLine, RiTailwindCssFill} from "react-icons/ri";
-import {SiTypescript} from "react-icons/si";
+import {SiMongodb, SiTypescript} from "react-icons/si";
 export default function Projects() {
     const cards = [
         {
@@ -18,34 +18,16 @@ export default function Projects() {
             ]
         },
         {
-            title: "lorem2",
-            imageSrc:"/Projects/portfolio.png",
-            description: "Lorem ipsum dolor sit amet, consetetur" ,
-            tags: [{ Icon: FaReact, name: "React"}]
+            title: "Tracker Analyzer",
+            imageSrc:"/Projects/tracker-analyzer.png",
+            description: "A CLI tool to find out trackers and fingerprinting methods used by a website. " ,
+            tags: [{ Icon: SiTypescript, name: "TypeScript" }]
         },
         {
-            title: "lorem2",
-            imageSrc:"/Projects/portfolio.png",
-            description: "Lorem ipsum dolor sit amet, consetetur" ,
-            tags: [{ Icon: FaReact, name: "React"}]
-        },
-        {
-            title: "lorem2",
-            imageSrc:"/Projects/portfolio.png",
-            description: "Lorem ipsum dolor sit amet, consetetur" ,
-            tags: [{ Icon: FaReact, name: "React"}]
-        },
-        {
-            title: "lorem2",
-            imageSrc:"/Projects/portfolio.png",
-            description: "Lorem ipsum dolor sit amet, consetetur" ,
-            tags: [{ Icon: FaReact, name: "React"}]
-        },
-        {
-            title: "lorem2",
-            imageSrc:"/Projects/portfolio.png",
-            description: "Lorem ipsum dolor sit amet, consetetur" ,
-            tags: [{ Icon: FaReact, name: "React" }]
+            title: "JSON Web Token (JWT) Authentication",
+            imageSrc:"/Projects/jwt-auth.png",
+            description: "A MERN stack application that implements JWT authentication." ,
+            tags: [{ Icon: FaReact, name: "React"}, { Icon: FaNodeJs, name: "NodeJS"}, { Icon: SiMongodb, name: "MongoDB"}]
         },
     ]
     return (
