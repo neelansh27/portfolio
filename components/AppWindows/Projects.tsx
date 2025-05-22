@@ -20,6 +20,7 @@ export default function Projects() {
         {
             title: "Tracker Analyzer",
             imageSrc:"/Projects/tracker-analyzer.png",
+            url: 'https://github.com/neelansh27/tracker-analyzer',
             description: "A CLI tool to find out trackers and fingerprinting methods used by a website. " ,
             tags: [{ Icon: SiTypescript, name: "TypeScript" }]
         },
@@ -27,6 +28,14 @@ export default function Projects() {
             title: "JSON Web Token (JWT) Authentication",
             imageSrc:"/Projects/jwt-auth.png",
             description: "A MERN stack application that implements JWT authentication." ,
+            url: 'https://github.com/neelansh27/jwt-auth',
+            tags: [{ Icon: FaReact, name: "React"}, { Icon: FaNodeJs, name: "NodeJS"}, { Icon: SiMongodb, name: "MongoDB"}]
+        },
+        {
+            title: "BlogPress",
+            imageSrc:"/Projects/blogpress.png",
+            url: 'https://blogpress-client.vercel.app',
+            description: "A MERN stack blog posting application." ,
             tags: [{ Icon: FaReact, name: "React"}, { Icon: FaNodeJs, name: "NodeJS"}, { Icon: SiMongodb, name: "MongoDB"}]
         },
     ]
@@ -40,7 +49,7 @@ export default function Projects() {
             <div className={"grid grid-cols-1 gap-4 m-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8"}>
                 {
                     cards.map((card, i) => (
-                        <ProjectCard key={i} title={card.title} imageSrc={card.imageSrc} description={card.description} tags={card.tags} />
+                        <ProjectCard key={i} title={card.title} imageSrc={card.imageSrc} description={card.description} url={card.url} tags={card.tags} />
                     ))
                 }
             </div>
